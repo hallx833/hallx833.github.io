@@ -1,0 +1,84 @@
+/*--- default styles for *.md files (positions.md, lab_meetings.md) ---*/
+.content-wrap p{
+  padding-bottom: $content-element-padding-bottom;
+}
+.content ul{
+  padding-left: $base-font-size * 2;
+  padding-bottom: $content-element-padding-bottom;
+}
+.content li ul{
+  padding-left: $base-font-size * 2;
+  padding-bottom: 0;
+}
+.content strong, .content b{
+  font-weight: $base-font-weight-bold;
+}
+
+/*--- classes for *.html pages (software.html, publications.html) ---*/
+/* example: one year with all publications */
+.section{
+  margin-top: $base-font-size;
+}
+/* example: a publication with title and links */
+.element-wrap{
+  padding-bottom: $base-font-size / 2;
+}
+/* example:  a publication's number */
+.element-counter{
+  padding-right: $base-font-size / 2.5;
+  min-width: $base-font-size * 2.75;
+  text-align: right;
+}
+/* example: bold software name */
+.element-name{
+  font-weight: $base-font-weight-bold;
+  display: inline;
+}
+/* example: software description */
+.element-text{
+  display: inline;
+}
+/* example: software author (with indent) */
+.element-subtext{
+  margin-left: $base-font-size * 1.25;
+}
+/* example: software links (with indent) */
+.element-links{
+  margin-left: $base-font-size * 1.25;
+}
+/*--------*/
+.wrap-flex{
+  display: flex;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+
+/*--- people page ---*/
+.people-image{
+  height: $people-image-height;
+  width: 100%;
+  max-height: $image-max-height;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%,50%;
+}
+
+/*--- lab meetings ---*/
+.widetable{
+  width: 100%;
+  border-collapse: collapse;
+}
+.widetable thead{
+  background-color: $table-head-bg-color;
+}
+.widetable tr:nth-child(even) {
+  background-color: $bg-color-second;
+}
+.widetable th{
+  padding: $table-th-padding;
+  font-weight: $base-font-weight-bold;
+}
+.widetable td{
+  padding: $table-td-padding;
+}

@@ -1,0 +1,154 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+/*
+This file contains variables, styles for different screens
+and includes all other css files.
+
+content.scss contains:
+  - default styles for *.md pages (lab_meetings.md, positions.md)
+  - 
+  - additional styles for other pages (people.html, lab_meeting table)
+
+default.scss contains:
+  - reset styles
+  - default styles for fonts and colors
+  - styles for page layout
+
+filter.scss contains styles for filter by year (the publications page)
+
+footer.scss contains default styles for footer (fonts, colors, links)
+
+home.scss contains styles for home page:
+  - styles for the image (you can change image in index.html file)
+  - styles for the about paragraph
+
+menu.scss contains all menu styles, including mobile menu and overlay
+
+scroll.scss contains styles for the scroll-to-top button
+*/
+
+/*--- GLOBAL variables ---*/
+$base-text-color: #2d2d2d;
+$link-color: #9e5101;
+$icon-color: #776458;
+$bg-color-second: #f4f0ee;
+$bg-color-active: #dbd6d1;
+
+$footer-link-color: #edc7b5;
+$footer-bg-color: #554C46;
+
+$main-image-bg-color: #45392B;
+
+$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
+$base-line-height: 1.45;
+$footer-font-size: 16px;
+
+$base-font-weight: 300;
+$base-font-weight-bold: 400;
+
+$h-font-weight: 400;
+$h-margin-bottom: 15px;
+
+$bg-color: #fafafa;
+
+$menu-bg-color: #e6e6e6;
+$menu-more-width: 250px;
+$menu-height: 55px;
+$menu-element-padding: 0 15px 0 15px;
+
+$footer-base-text-color: #ffffff;
+
+$content-width: 760px;
+$content-padding: 0 25px 0 25px;
+$content-element-padding-bottom: 20px;
+
+$filter-bg-color: transparent;
+
+$image-max-height: 65vw;
+$home-image-height: 570px;
+$people-image-height: 500px;
+
+$table-head-bg-color: #eaeaea;
+
+$btn-scroll-bottom: 25px;
+
+$z-index-middle: 10;
+$z-index-highest: 100;
+
+/*- large screens-*/
+@media screen and (min-width: 760px) {
+  $base-font-size: 20px;
+  $home-h1-font-size: $base-font-size * 3.5;
+  $home-h3-font-size: $base-font-size * 1.35;
+  $table-td-padding: 2px 10px 2px 10px;
+  $table-th-padding: 5px 10px 5px 10px;
+  $btn-scroll-left: calc(50% + 300px);
+  @import
+    "default",
+    "menu",
+    "scroll",
+    "footer",
+    "home",
+    "content",
+    "filter";
+}
+/*- mobile screens -*/
+@media screen and (max-width: 760px) {
+  $base-font-size: 17px;
+  $home-h1-font-size: 10vw;
+  $home-h3-font-size: 4vw;
+  $table-td-padding: 2px 2px 2px 2px;
+  $table-th-padding: 3px 2px 3px 2px;
+  $btn-scroll-left: calc(100% - 80px);
+  @import
+    "default",
+    "menu",
+    "scroll",
+    "footer",
+    "home",
+    "content",
+    "filter";
+  /* display mobile menu*/
+  .menu-element{
+    display: none;
+  }
+  .menu-opener{
+    display: block;
+  }
+  /* mobile footer */
+  .footer-contacts{
+    flex-grow: 12;
+    width: 100%;
+  }
+  .footer-links{
+    flex-grow: 12;
+    width: 100%;
+  }
+  .footer-links a{
+    padding-bottom: $footer-font-size / 1.5;
+  }
+  .footer-description{
+    flex-grow: 12;
+    width: 100%;
+  }
+  /*fix for a wide content*/
+  .content-wrap{
+    overflow-x: auto;
+  }
+}
+
+/* fix table for lab meeting page for small screens*/
+@media screen and (max-width: 409px) {
+  .widetable td{
+    font-size: 4vw;
+  }
+}
+/* better scroll button position for larger screens */
+@media screen and (min-width: 950px) {
+  .btn-scroll-top{
+    left: calc(50% + 385px);
+    bottom: 55px;
+  }
+}

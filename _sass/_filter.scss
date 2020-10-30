@@ -1,0 +1,65 @@
+/*--- filter (publications page) ---*/
+/* outer wrapper for the entire filter */
+.pub-filter{
+  background-color: $filter-bg-color;
+  padding: 10px 0 10px 0;
+}
+/* open/close filter */
+.pub-filter-toggle{
+  font-size: $base-font-size;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+/* wrapper for year buttons and reset*/
+.pub-filter-wrap{
+  margin-top:10px;
+  display: none;
+}
+/* wrapper for year buttons */
+.pub-filter-years{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+/* year buttons */
+.pub-yr{
+  display:inline-block;
+  padding: 5px;
+  margin: 5px 20px 5px 5px;
+  width: $base-font-size * 3.8;
+  font-size: $base-font-size * 0.9;
+  height: $base-font-size * 1.8;
+  background-color: $bg-color-second;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: $bg-color-active;
+}
+.pub-yr-active{
+  background-color: $bg-color-active;
+}
+/* reset */
+.pub-filter-reset{
+  width: $base-font-size * 4.5;
+  font-size: $base-font-size * 0.9;
+  margin:10px 5px 10px 5px;
+  padding: 5px;
+  height: $base-font-size * 1.9;
+  background-color: $bg-color-second;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: $bg-color-active;
+}
+.pub-filter-reset span{
+  font-size: $base-font-size * 0.9;
+}
+.pub-filter-reset:active{
+  background-color: $bg-color-active;
+}
