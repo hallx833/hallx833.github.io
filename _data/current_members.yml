@@ -1,47 +1,7 @@
-- name: Claus O. Wilke
-  role: Principal Investigator
-  url: "http://integrativebio.utexas.edu/component/cobalt/item/7-integrative-biology/237-wilke-claus-o"
-  pubs: "http://scholar.google.com/citations?user=Nc8U6E4AAAAJ"
-  blog: "http://serialmentor.com/blog"
-  github: clauswilke
-
-- name: Adam Hockenberry
-  role: Postdoc
-  joined: 2017
-  pubs: "https://scholar.google.com/citations?user=W5qqC2wAAAAJ&hl=en"
-  github: adamhockenberry
-
-- name: Cory DuPai
-  role: Graduate Student (CMB)
-  joined: 2017
-  pubs: "https://scholar.google.com/citations?hl=en&user=F6StyZYAAAAJ"
-  github: corydubois
-
-- name: Mackenzie M. Johnson
-  role: Graduate Student (EEB)
-  joined: 2017
-  pubs: "https://scholar.google.com/citations?hl=en&user=vBGR7-UAAAAJ"
-  github: mmjohn
-    
-- name: Kuang Hu
-  role: Graduate Student (CMB)
-  joined: 2019
-  github: KuangHu
-
-- name: Alexis M. Hill
-  role: Graduate Student (CMB)
-  joined: 2019
-  github: alexismhill3
-  
-- name: Anastasiya Kulikova
-  role: Graduate Student (CMB)
-  joined: 2020
-  
-- name: Sahil Shah
-  role: Undergraduate
-  joined: 2019
-  github: SahilBShah
-
-- name: Tanvi Ingle
-  role: Undergraduate
-  joined: 2020
+- name: Evan Hall
+  role: Undergraduate Researcher
+  email: hallx833@umn.edu
+  github: hallx833
+  degree: B.A. 2021 Computer Science
+  school: University of Minnesota
+  description: I am an undergraduate student majoring in computer science. I am currently researching resistance to pregermination in barley seeds and developing techniques to identify pregermination using hyperspectral imagery data.

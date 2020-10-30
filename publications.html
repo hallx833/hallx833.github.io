@@ -37,7 +37,7 @@ permalink: /publications
           {{ counter | minus: forloop.index0 }}.
         </div>
         <div class="element-text">
-          {{ pub.author }} ({{ pub.year }}). {{ pub.title }} {{ pub.ref }}.
+            <b> {{ pub.title }} </b>  <br> {{ pub.author }} ({{ pub.year }}).  {{ pub.ref }}.
           {% if pub.doi %}
             <br/>
             doi: <a href="http://doi.org/{{ pub.doi }}">{{pub.doi}}</a>
@@ -46,6 +46,8 @@ permalink: /publications
             <br/>
             pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmcid }}">{{pub.pmcid}}</a>
           {% endif %}
+          <br>
+          {{ pub.image }}
         </div>
       </div>
       {% endif %}

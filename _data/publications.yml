@@ -1,5 +1,20 @@
 - author:  F. Li, N. Upadhyaya, J. Sperschneider, O. Matny, H. Nguyen-Phuc, R. Mago, C. Raley, M. Miller, K. Silverstein, E. Henningsen, CD Hirsch, B. Visser, Z. Pretorius, B. Steffenson, B.
   year: 2019
   title: Emergence of the Ug99 lineage of the wheat stem rust pathogen through somatic hybridisation
-  ref: "bioRxiv 692640v1"
-  doi: 10.1101/692640v1
+  ref: "bioRxiv 692640"
+  doi: 10.1101/692640
+  image: <img src="/img/publications/circos.png" alt="test">
+
+- author:  Z. Li, P. Zhou, R. Della Coletta, T. Zhang, A. Brohammer, B. Vaillancourt, A. Lipzen, C. Daum, K. Berry, N. de Leon, CD Hirsch, CR Buell, S. Kaeppler, N. Springer, CN Hirsch
+  year: 2019
+  title: Highly genotype- and tissue-specific single-parent expression drives dynamic gene expression complementation in maize hybrids
+  ref: "bioRxiv 668681"
+  doi: 10.1101/668681
+  image: <img src="/img/publications/zhi_spe.png" alt="test">
+
+- author:  S. Anderson, M. Stitzer, P. Zhou, J. Ross-Ibarra, CD Hirsch, N. Springer
+  year: 2019
+  title: Dynamic patterns of transcript abundance of transposable element families in maize
+  ref: "bioRxiv 668558"
+  doi: 10.1101/668558
+  image: <img src="/img/publications/anderson_te_expression.png" alt="test">
