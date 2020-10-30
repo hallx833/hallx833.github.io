@@ -3,53 +3,471 @@ layout: page
 title: Publications
 permalink: /publications
 ---
-{% if site.data.publications %}
 
-  {% assign yrs = site.data.publications | map: "year" | uniq | sort_natural | reverse %}
-  {% assign counter = site.data.publications.size %}
-  <!-- FILTER YEAR-->
-  <div class="pub-filter">
-    <button class="pub-filter-toggle" id="filter-toggle" onclick="toggleFilters()">
-      Filter by Year ▾
-    </button>
-    <div id="filter-wrap" class="pub-filter-wrap">
-      <div class="pub-filter-years">
-        {% for yr in yrs %}
-        <button class="pub-yr" onclick="toggleYears(this, '{{yr | downcase }}')">
-          {{ yr }}
-        </button>
-        {% endfor %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<style>body #backtotop {background: #5a5a5a;border-color: #5a5a5a;color: #ffffff;}body #backtotop:hover { background: #333333; border-color: #333333; }</style>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-81009381-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<link rel="canonical" href="https://coryhirschlab.cfans.umn.edu/publications" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/folwell/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="https://coryhirschlab.cfans.umn.edu/publications" />
+
+  <title>Publications | Hirsch lab</title>
+  <link rel="stylesheet" media="all" href="/sites/coryhirschlab.cfans.umn.edu/files/css/css_kQ0B3Awiu5ZzZtjH3JJASAeBC69GF6938IWQX3Y1Hjg.css" />
+<link rel="stylesheet" media="all" href="/sites/coryhirschlab.cfans.umn.edu/files/css/css_i1GhGR95VslXOaFDBaRbnS0Wk1VhYpBeDpIWNc_qjlU.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" />
+<link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
+  
+<!--[if lte IE 8]>
+<script src="/sites/coryhirschlab.cfans.umn.edu/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" defer crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.12.0/js/v4-shims.js" defer crossorigin="anonymous"></script>
+
+</head>
+<body class="no-sidebars fixed-width path-node page-node-type-dl-general-page">
+  <div class="page-wrapper">
+  <div id="skip">
+    <a class="visually-hidden focusable skip-link" href="#content">
+        Skip to main content
+    </a>
+  </div>
+      
+    <!-- Begin UMN Header -->
+<header id="mandatory-header-wrapper" class="umnhf-campus-tc dtd umnhf-background-maroon dropdown no-links" role="banner">
+    <div class="umnhf" id="umnhf-h">
+        <div class="umnhf" id="umnhf-h-mast">
+            <a class="umnhf" id="umnhf-h-wm" href="https://twin-cities.umn.edu"><span>Go to the U of M home page</span></a>
+                                    <ul class="umnhf" id="umnhf-h-ql" role="presentation">
+                <li class="umnhf" id="umnhf-h-onestop"><a href="https://onestop.umn.edu">One Stop</a></li>
+                <li class="umnhf" id="umnhf-h-myu"><a href="http://www.myu.umn.edu">MyU<span></span>: For Students, Faculty, and Staff</a></li>
+            </ul>
+                        <!-- Button below is for dropdown toggle, only visible on mobile screens. If using a non-dropdown version you can delete this tag -->
+            <button class="umnhf" id="umnhf-m-search" href="#" title="toggle search field">Search</button>        </div>
+        <div
+  class="gcse-searchbox-only"
+  ></div>
+    </div>
+</header>
+<!-- End UMN Header -->
+
+        <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div role="document" class="page">
+
+  <section class="site-identity">
+    <header class="folwell-identity">
+            <p class="prefix-name">
+                            <span class="two-lines">Plant Stress Resistance Biology</span>
+                    </p>
+        <p class="sitename">
+    <a href="/">Hirsch lab</a>
+</p>
+</header>
+
+  </section>
+
+      <header id="site-header">
+      <div class="clearfix navigation">
+            <div class="region region-header">
+        
+
+<div id="block-folwell-responsivemenumobileicon" data-block-plugin-id="responsive_menu_toggle" class="responsive-menu-toggle-wrapper responsive-menu-toggle block block-responsive-menu block-responsive-menu-toggle">
+  
+    
+      <a id="toggle-icon" class="toggle responsive-menu-toggle-icon" title="Menu" href="#off-canvas">
+  <span class="icon"></span><span class="label">Menu</span>
+</a>
+  </div><nav id="block-folwell-mainnavigation" data-block-plugin-id="superfish:main" class="block block-superfish block-superfishmain" aria-label="main menu">
+    
+        
+            
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none">
+  
+<li id="main-menu-link-contenta1aa6f95-5fe2-4502-8a94-91aca549d937" class="sf-depth-1 sf-no-children"><a href="/home2" class="sf-depth-1">Home</a></li><li id="main-menu-link-content90b8435d-2ac9-41ba-9b63-62eccaee339d" class="sf-depth-1 menuparent"><a href="/lab-members/lab-members" class="sf-depth-1 menuparent" aria-haspopup="true" aria-expanded="false">Lab Members</a><ul><li id="main-menu-link-contentae96b169-9ec8-4caa-98d0-380337fae997" class="sf-depth-2 sf-no-children"><a href="/lab-members/new-members" class="sf-depth-2">Current members</a></li><li id="main-menu-link-contentca1ba88a-3d58-4e35-88f8-225837bf5058" class="sf-depth-2 sf-no-children"><a href="/lab-members/past-members" class="sf-depth-2">Past Members</a></li></ul></li><li id="main-menu-link-content930f295d-4c4a-49bb-a56c-8729ac8e30e5" class="sf-depth-1 menuparent"><a href="/research" class="sf-depth-1 menuparent" aria-haspopup="true" aria-expanded="false">Research</a><ul><li id="main-menu-link-content6a1621e4-2ed4-4b38-a962-5ac675108de1" class="sf-depth-2 sf-no-children"><a href="/research" class="sf-depth-2">Research Overview</a></li><li id="main-menu-link-content7e99c460-42f6-4d47-90ed-6de695b2725e" class="sf-depth-2 sf-no-children"><a href="/current-projects" class="sf-depth-2">Current Projects</a></li><li id="main-menu-link-contentb3c77e1e-fc76-4601-a36d-29391fb51b52" class="sf-depth-2 sf-no-children"><a href="/research/past-projects" class="sf-depth-2">Past Projects</a></li></ul></li><li id="main-menu-link-content432aa1f6-10f7-4a16-8788-dc1b05b504ba" class="active-trail sf-depth-1 sf-no-children"><a href="/publications" class="is-active sf-depth-1">Publications</a></li><li id="main-menu-link-content24b09e02-d941-4fa1-a0f5-3c256fb29d81" class="sf-depth-1 sf-no-children"><a href="/teaching" class="sf-depth-1">Teaching</a></li><li id="main-menu-link-content3b75c561-30c6-4c8f-b371-fff1027def72" class="sf-depth-1 sf-no-children"><a href="/join-hirsch-lab" class="sf-depth-1">Join the Hirsch Lab</a></li>
+</ul>
+
+    </nav>
+    </div>
+
       </div>
-      <button class="pub-filter-reset" onclick="resetFilters()">
-        <span class="mdi mdi-refresh"></span>
-        Reset
-      </button>
+          </header>
+  
+      <section id="featured">
+      <div class="columns">
+            <div class="region region-featured">
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+    </div>
+
+      </div>
+    </section>
+  
+      <section id="breadcrumb">
+      <div class="clearfix">
+            <div class="region region-breadcrumb">
+        
+
+<div id="block-folwell-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+          <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+        <h2 class="visually-hidden" id="system-breadcrumb">Breadcrumb</h2>
+
+        <ol>
+                            <li>
+                                            <a href="/">Home</a>
+                                    </li>
+                            <li>
+                                            Publications
+                                    </li>
+                    </ol>
+    </nav>
+
+  </div>
+    </div>
+
+      </div>
+    </section>
+  
+  <main role="main" class="clearfix">
+    <a id="main-content" tabindex="-1"></a>
+
+    
+    <section id="content">
+          <div class="region region-content">
+        
+
+<div id="block-folwell-page-title" data-block-plugin-id="page_title_block" class="block block-core block-page-title-block">
+  
+    
+      
+    <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Publications</span>
+</h1>
+
+
+  </div>
+
+<div id="block-folwell-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      <article id="node-1" class="" role="article" about="/publications">
+  
+    
+
+    <div class="posted">
+        
+  </div>
+  
+  
+
+<div  class="panel-display brenham-flipped clearfix">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-header panel-panel">
+        <div  class="panel-panel-inner">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 radix-layouts-content panel-panel">
+        <div  class="panel-panel-inner">
+          
+
+<div data-block-plugin-id="field_block:node:dl_general_page:field_dl_body" class="block block-layout-builder block-field-blocknodedl-general-pagefield-dl-body">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-field-dl-body field--type-text-with-summary field--label-hidden field__item"><hr /><h2>Links</h2>
+
+<p><strong><a href="https://scholar.google.com/citations?hl=en&amp;user=hIKqjOIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank">Google Scholar</a> | </strong><strong><a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hirsch+CD" target="_blank">PubMed</a> | </strong><strong><a href="https://www.researchgate.net/profile/Cory_Hirsch/publications" target="_blank">ResearchGate</a></strong></p>
+
+<hr /><h2>2019</h2>
+
+<div alt="ug99" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="79767153-e13d-4ef1-9427-9874de0e33e1" data-langcode="und" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/circos.png?itok=NYoZVE2m" alt="ug99" title="circos.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Emergence of the Ug99 lineage of the wheat stem rust pathogen through somatic hybridisation</h3>
+
+<p>F. Li, N. Upadhyaya, J. Sperschneider, O. Matny, H. Nguyen-Phuc, R. Mago, C. Raley, M. Miller, K. Silverstein, E. Henningsen, CD Hirsch, B. Visser, Z. Pretorius, B. Steffenson, B. Schwessinger, P. Dodds, M. Figueroa</p>
+
+<p>2019 | <em><a href="https://www.biorxiv.org/content/10.1101/692640v1" target="_blank">bioRxiv</a></em></p>
+
+<p> </p>
+
+<div alt="spe" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="c424fabe-8c54-4a67-96a1-d5c4352c767c" data-langcode="und" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/zhi_spe.png?itok=zQ4W46SX" alt="spe" title="zhi_spe.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Highly genotype- and tissue-specific single-parent expression drives dynamic gene expression complementation in maize hybrids</h3>
+
+<p>Z. Li, P. Zhou, R. Della Coletta, T. Zhang, A. Brohammer, B. Vaillancourt, A. Lipzen, C. Daum, K. Berry, N. de Leon, CD Hirsch, CR Buell, S. Kaeppler, N. Springer, CN Hirsch</p>
+
+<p>2019 |<em> <a href="https://www.biorxiv.org/content/10.1101/668681v1" target="_blank">bioRxiv</a></em></p>
+
+<p> </p>
+
+<div alt="te expression" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="d5e99278-0fb9-4aec-99bd-9323ccf3ea3d" data-langcode="und" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/anderson_te_expression.png?itok=yMKl6Bdd" alt="te expression" title="anderson_te_expression.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Dynamic patterns of transcript abundance of transposable element families in maize</h3>
+
+<p>S. Anderson, M. Stitzer, P. Zhou, J. Ross-Ibarra, CD Hirsch, N. Springer</p>
+
+<p>2019 |<em> <a href="https://www.biorxiv.org/content/10.1101/668558v1" target="_blank">bioRxiv</a></em></p>
+
+<p> </p>
+
+<div alt="te distribution" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="ac5353c8-93b5-449b-8fb4-a00701310c31" data-langcode="und" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/anderson_te_distribution.png?itok=Mq_wjoj7" alt="te distribution" title="anderson_te_distribution.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Transposable elements contribute to dynamic genome content in maize</h3>
+
+<p>S. Anderson, M. Stitzer, A. Brohammer, P. Zhou, J. Noshay, CD Hirsch, J. Ross-Ibarra, CN Hirsch, N. Springer</p>
+
+<p>2019 |<em> <a href="https://www.biorxiv.org/content/10.1101/547398v1" target="_blank">bioRxiv</a></em></p>
+
+<p> </p>
+
+<div alt="enders" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="925ab748-a1ff-4716-ab73-d4922ba20589" data-langcode="und" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/enders.png?itok=vYz6bV8g" alt="enders" title="enders.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Classifying cold stress responses of inbred maize seedlings using RGB imaging</h3>
+
+<p>T. Enders, S. St. Dennis, J. Oakland, S. Callen, M. Gehan, N. Miller, E. Spalding, N. Springer, CD Hirsch</p>
+
+<p>2019 |<em> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pld3.104" target="_blank">Plant Direct</a></em></p>
+
+<hr /><h2>2018</h2>
+
+<div alt="pca" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="8bdf8d86-e294-4ef8-84d9-6e040ce6bfa4" data-langcode="und" title="pca_out.png" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/pca_out.png?itok=oLfLRYUX" alt="pca" title="pca_out.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3><em>De novo</em> assembly and phasing of dikaryotic genomes from two isolates of <em>Puccinia coronata</em> f. sp. <em>avenae</em>, the causal agent of oat crown rust</h3>
+
+<p>M. Miller, Y. Zhang, V. Omidvara, J. Sperschneider, B. Schwessinger, C. Raley, J. Palmer, D. Garnica, N. Upadhyayah, J. Rathjen, J. Taylor, R. Park, P. Dodds, CD Hirsch, S. Kianiana, M. Figueroa</p>
+
+<p>2018 |<em> <a href="http://mbio.asm.org/content/9/1/e01650-17.full" target="_blank">mBio</a></em></p>
+
+<hr /><h2>2017</h2>
+
+<div alt="cis-trans" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="67c6038a-5690-48aa-ac96-f284a0b2e61b" data-langcode="und" title="mandy_paper.png" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/mandy_paper_0.png?itok=MIRV6Emc" alt="cis-trans" title="mandy_paper.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Natural variation for gene expression responses to abiotic stress in maize</h3>
+
+<p>A. Waters, I. Makarevitch, J. Noshay, L. Burghardt, CN Hirsch, CD Hirsch, N. Springer</p>
+
+<p>2017 |<em> <a href="http://onlinelibrary.wiley.com/doi/10.1111/tpj.13414/full" target="_blank">The Plant Journal</a></em></p>
+
+<p> </p>
+
+<div alt="PH207" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="f04577ce-81a3-459e-82e7-91592d4de348" data-langcode="und" title="ph207.png" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/0_0.jpeg?itok=xCvvrIJ1" alt="PH207" title="ph207.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Transposable element influences on gene expression in plants</h3>
+
+<p>CD Hirsch, N. Springer</p>
+
+<p>2017 |<em> <a href="http://www.sciencedirect.com/science/article/pii/S1874939916301006" target="_blank">BBA Gene Regulatory Mechanism</a></em></p>
+
+<hr /><h2>2016</h2>
+
+<div alt="PH207" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="f5cceb09-c45c-49ca-a9b2-c8e1ab95fedc" data-langcode="und" title="ph207.png" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/ph207.png?itok=iwW2oJC5" alt="PH207" title="ph207.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Draft assembly of elite inbred line PH207 provides insights into genomic and transcriptomic diversity in maize</h3>
+
+<p>CN Hirsch, CD Hirsch, A. Brohammer, M. Bowman, I. Soifer, O. Barad, D. Shem-Tov, K. Baruch, F. Lu, A. Hernandez, C. Fields, C. Wright, K. Koehler, N. Springer, E. Buckler, CR Buell, N. de Leon, S. Kaeppler, K. Childs, M. Mikel</p>
+
+<p>2016 |<em> <a href="http://www.plantcell.org/content/early/2016/11/01/tpc.16.00353.abstract" target="_blank">The Plant Cell</a></em></p>
+
+<p> </p>
+
+<div alt="potato resources" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="ea162937-b8f5-407d-b418-26bf28642f2f" data-langcode="und" title="potato resources" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/potato.png?itok=ffGnVhgk" alt="potato resources" title="potato resources" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>A toolbox of potato genetic and genomic resources</h3>
+
+<p>CD Hirsch, CR Buell, CN Hirsch</p>
+
+<p>2016 |<em> <a href="http://link.springer.com/article/10.1007/s12230-015-9486-0" target="_blank">American Journal of Potato Research</a></em></p>
+
+<hr /><h2>2015</h2>
+
+<div alt="mCHH maize" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="92d9a418-286f-4f6d-a3a3-d8ce9446e5ae" data-langcode="und" title="mchh.png" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/mchh.png?itok=9Fr6WtpN" alt="mCHH maize" title="mchh.png" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>RNA-directed DNA methylation enforces boundaries between heterochromatin and euchromatin in the maize genome</h3>
+
+<p>Q. Li, J. Gent, G. Zynda, J. Song, I. Makarevitch, CD Hirsch, CN Hirsch, RK Dawe, T. Madzima, K. McGinnis, D. Lisch, R. Schmitz, M. Vaughn, N. Springer</p>
+
+<p>2015 |<em> <a href="http://www.pnas.org/content/112/47/14728.short" target="_blank">Proceedings of the National Academy of Sciences</a></em></p>
+
+<p> </p>
+
+<div alt="simRNA" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="c13daaca-7f56-4d8e-91d3-53e5bbf30f73" data-langcode="und" title="simRNA" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/simrna.png?itok=ViMfekaQ" alt="simRNA" title="simRNA" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Genomic limitations to RNA sequencing expression profiling</h3>
+
+<p>CD Hirsch, N. Springer, CN Hirsch</p>
+
+<p>2015 |<em> <a href="http://onlinelibrary.wiley.com/doi/10.1111/tpj.13014/full" target="_blank">The Plant Journal</a></em></p>
+
+<hr /><h2>2014</h2>
+
+<div alt="reduced representation" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="09e62544-6e79-455e-899e-fd602992d5c7" data-langcode="und" title="reduced representation" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/reduced2.png?itok=lUXXAxuJ" alt="reduced representation" title="reduced representation" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Reduced representation approaches to interrogate genome diversity in large repetitive plant genomes</h3>
+
+<p>CD Hirsch, J. Evans, CR Buell, CN Hirsch</p>
+
+<p>2014 |<em> <a href="http://bfg.oxfordjournals.org/content/13/4/257.full" target="_blank">Briefings in Functional Genomics</a></em></p>
+
+<p> </p>
+
+<div alt="spud db" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="3c1e1d0b-743c-4f4a-b22e-4ee00877fd1a" data-langcode="und" title="spud db" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/spuddb.png?itok=wPvENHbq" alt="spud db" title="spud db" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Spud DB: a resource for mining sequences, genotypes, and phenotypes to accelerate potato breeding</h3>
+
+<p>CD Hirsch, J. Hamilton, K. Childs, J. Cepela, E. Crisovan, B. Vaillancourt, CN Hirsch, M. Habermann, B. Neal, CR Buell</p>
+
+<p>2014 |<em> <a href="https://dl.sciencesocieties.org/publications/tpg/articles/7/1/plantgenome2013.12.0042" target="_blank">The Plant Genome</a></em></p>
+
+<p> </p>
+
+<hr /><h2>2013 -</h2>
+
+<div alt="potato diversity" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="ff709737-4ad3-4903-9c39-bcd906502ad9" data-langcode="und" title="potato diversity" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/potato_diversity.png?itok=b7_0Srw5" alt="potato diversity" title="potato diversity" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Retrospective view of North American potato (<em>Solanum tuberosum</em> L.) breeding in the 20th and 21st centuries</h3>
+
+<p>CN Hirsch, CD Hirsch, K. Felcher, J. Coombs, D. Zarka, A. Van Deynze, W. De Jong, R. Veilleux, S. Jansky, P. Bethke, D. Douches, CR Buell</p>
+
+<p>2013 |<em> <a href="http://www.g3journal.org/content/3/6/1003.full" target="_blank">Genes </a></em><a href="http://www.g3journal.org/content/3/6/1003.full" target="_blank">|</a><em><a href="http://www.g3journal.org/content/3/6/1003.full" target="_blank"> Genomes </a></em><a href="http://www.g3journal.org/content/3/6/1003.full" target="_blank">|</a><em><a href="http://www.g3journal.org/content/3/6/1003.full" target="_blank"> Genetics</a></em></p>
+
+<p> </p>
+
+<div alt="rice cenh3" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="6a0edab5-a747-43e2-af66-f954bc16343b" data-langcode="und" title="rice cenh3" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/rice_centromere.png?itok=9bflSQZI" alt="rice cenh3" title="rice cenh3" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Centromeres: sequences, structure, and biology</h3>
+
+<p>CD Hirsch, J. Jiang</p>
+
+<p>2012 |<em> <a href="http://link.springer.com/chapter/10.1007/978-3-7091-1130-7_4" target="_blank">Plant Genome Diversity Volume 1</a></em></p>
+
+<p> </p>
+
+<div alt="rice cen8" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="7dde52c9-745d-4a95-be32-87dae23efb2e" data-langcode="und" title="rice cen8" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/rice_cen8.png?itok=ffJoDK5W" alt="rice cen8" title="rice cen8" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Conservation and purifying selection of transcribed genes located in a rice centromere</h3>
+
+<p>C. Fan, J. Walling, J. Zhang, CD Hirsch, J. Jiang, R. Wing</p>
+
+<p>2011 |<em> <a href="http://www.plantcell.org/content/23/8/2821.abstract" target="_blank">The Plant Cell</a></em></p>
+
+<p> </p>
+
+<p> </p>
+
+<h3> </h3>
+
+<div alt="potato telomere" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="10664546-23f1-48ec-a429-15a2ceaea9f3" data-langcode="und" title="potato telomere" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/potato_telomere.png?itok=W8Wb2q_5" alt="potato telomere" title="potato telomere" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Organization and evolution of subtelomeric satellite repeats in the potato genome</h3>
+
+<p>G. Torres, Z. Gong, M. Iovene, CD Hirsch, CR Buell, G. Bryan, P. Novák, J. Macas, J. Jiang</p>
+
+<p>2011 |<em> <a href="http://www.g3journal.org/content/1/2/85.full" target="_blank">Genes </a></em><a href="http://www.g3journal.org/content/1/2/85.full" target="_blank">|</a><em><a href="http://www.g3journal.org/content/1/2/85.full" target="_blank"> Genomes </a></em><a href="http://www.g3journal.org/content/1/2/85.full" target="_blank">|</a><em><a href="http://www.g3journal.org/content/1/2/85.full" target="_blank"> Genetics</a></em></p>
+
+<p> </p>
+
+<div alt="polyploid cenh3" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="e0055e1c-0ef8-402e-8a95-60381fdba3ef" data-langcode="und" title="polyploid cenh3" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/polyploid_cenh3.png?itok=AYAj0XG-" alt="polyploid cenh3" title="polyploid cenh3" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Lineage-specific adaptive evolution of the centromeric protein CENH3 in diploid and allotetraploid Oryza species</h3>
+
+<p>CD Hirsch, Y. Wu, H. Yan, J. Jiang</p>
+
+<p>2009 |<em> <a href="http://mbe.oxfordjournals.org/content/26/12/2877.full" target="_blank">Molecular Biology and Evolution</a></em></p>
+
+<p> </p>
+
+<div alt="centromere cover" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-embed-display-settings="folwell_fifth" data-entity-type="media" data-entity-uuid="e81c1842-799a-452b-a51d-c953b759348e" data-langcode="und" title="centromere cover" class="embedded-entity align-left">  <img src="/sites/coryhirschlab.cfans.umn.edu/files/styles/folwell_fifth/public/files/media/centromere_cover.png?itok=eo1w8DPR" alt="centromere cover" title="centromere cover" typeof="foaf:Image" class="image-style-folwell-fifth" /></div>
+<h3>Structure and evolution of plant centromeres</h3>
+
+<p>K. Nagaki, J. Walling, CD Hirsch, J. Jiang, M. Murata</p>
+
+<p>2009 |<em> <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-00182-6_6" target="_blank">Progress in Molecular and Subcellular Biology: Centromere</a></em></p></div>
+      
+  </div>
+        </div>
+      </div>
+      <div class="col-md-4 radix-layouts-sidebar panel-panel">
+        <div  class="panel-panel-inner">
+          
+        </div>
+      </div>
     </div>
   </div>
-    <!-- END FILTER-->
-  {% for yr in yrs %}
-  <div class="section" id="year-{{ yr | downcase }}">
-    <h3 class="capitalize"><span class="mdi mdi-calendar"> </span> {{ yr }}</h3>
-    {% for pub in site.data.publications %}
-      {% if pub.year == yr %}
-      <div class="element-wrap wrap-flex">
-        <div class="element-counter">
-          {{ counter | minus: forloop.index0 }}.
-        </div>
-        <div class="element-text">
-          {{ pub.author }} ({{ pub.year }}). {{ pub.title }} {{ pub.ref }}.
-          {% if pub.doi %}
-            <br/>
-            doi: <a href="http://doi.org/{{ pub.doi }}">{{pub.doi}}</a>
-          {% endif %}
-          {% if pub.pmcid %}
-            <br/>
-            pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmcid }}">{{pub.pmcid}}</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
+    
+</div><!-- /.brenham-flipped -->
+
+  
+  
+  
+</article>
   </div>
-  {% endfor %}
-{% endif %}
+    </div>
+
+    </section>
+
+      </main>
+
+  </div>
+  </div>
+
+  
+  <!-- Begin UMN Footer -->
+<footer id="umnhf-f" class="umnhf" role="contentinfo">
+    <nav id="umnhf-f-myu">
+        <h3 class="umnhf-f-title visually-hidden">For Students, Faculty, and Staff</h3>
+        <ul role="presentation">
+            <li><a href="http://onestop.umn.edu/">One Stop</a></li>
+            <li><a href="https://www.myu.umn.edu/">MyU <span></span></a></li>
+        </ul>
+    </nav>
+  <small>© <span id="cdate">2020</span> Regents of the <a href="https://system.umn.edu">University of Minnesota</a>. All rights reserved. The University of Minnesota is an equal opportunity educator and employer. <a href="https://privacy.umn.edu">Privacy Statement</a></small>
+    <small><a href="https://oit-drupal-prd-web.oit.umn.edu/indexAccess.php?ref_url=https://coryhirschlab.cfans.umn.edu/publications">Report Web Disability-Related Issue</a></small>
+    <!-- Optional last updated link-->
+     <!-- add time tag w datetime attr -->
+</footer>
+<!-- End UMN Footer -->
+      <div class="off-canvas-wrapper"><div id="off-canvas">
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/home2" data-drupal-link-system-path="node/26">Home</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/lab-members/lab-members" data-drupal-link-system-path="node/36">Lab Members</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/lab-members/new-members" data-drupal-link-system-path="node/41">Current members</a>
+              </li>
+                <li class="menu-item">
+        <a href="/lab-members/past-members" data-drupal-link-system-path="node/31">Past Members</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/research" data-drupal-link-system-path="node/16">Research</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/research" data-drupal-link-system-path="node/16">Research Overview</a>
+              </li>
+                <li class="menu-item">
+        <a href="/current-projects" data-drupal-link-system-path="node/46">Current Projects</a>
+              </li>
+                <li class="menu-item">
+        <a href="/research/past-projects" data-drupal-link-system-path="node/51">Past Projects</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <a href="/publications" data-drupal-link-system-path="node/1" class="is-active">Publications</a>
+              </li>
+                <li class="menu-item">
+        <a href="/teaching" data-drupal-link-system-path="node/21">Teaching</a>
+              </li>
+                <li class="menu-item">
+        <a href="/join-hirsch-lab" data-drupal-link-system-path="node/11">Join the Hirsch Lab</a>
+              </li>
+        </ul>
+  
+
+</div></div>
+    </div>
+  <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"responsive_menu":{"position":"left","theme":"theme-dark","pagedim":"pagedim","breakpoint":"(min-width: 60em)","extension_keyboard":true,"superfish":{"active":false,"delay":300,"speed":100,"speedOut":100}},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":true,"back_to_top_prevent_in_admin":false,"back_to_top_button_type":"text","back_to_top_button_text":"Back to top"},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","dropShadows":false},"plugins":{"touchscreen":{"behaviour":"1","mode":"always_active"},"supposition":true,"supersubs":true}}},"umn_search":{"cx":"000747455861485679472:bqyjqaw6sp8"},"ajax":[],"user":{"uid":0,"permissionsHash":"9c26248e2b0676904ed23449c003a3374565ea80689c87bd2d9d95722ca0da30"}}</script>
+<script src="/sites/coryhirschlab.cfans.umn.edu/files/js/js_LIL9E9RocnabVzNrfNprlDKWzxs2OJmn2Hs7A7w8hUk.js"></script>
+
+</body>
+</html>
