@@ -18,3 +18,16 @@
   ref: "bioRxiv 668558"
   doi: 10.1101/668558
   image: <img src="/img/publications/anderson_te_expression.png" alt="test">
+
+- author:  S. Anderson, M. Stitzer, A. Brohammer, P. Zhou, J. Noshay, CD Hirsch, J. Ross-Ibarra, CN Hirsch, N. Springer
+  year: 2019
+  title: Transposable elements contribute to dynamic genome content in maize
+  ref: "bioRxiv 547398"
+  doi: 10.1101/547398
+  image: <img src="/img/publications/anderson_te_distribution.png" alt="test">
+
+- author:  T. Enders, S. St. Dennis, J. Oakland, S. Callen, M. Gehan, N. Miller, E. Spalding, N. Springer, CD Hirsch
+  year: 2019
+  title: Classifying cold stress responses of inbred maize seedlings using RGB imaging
+  doi: 10.1002/pld3.104
+  image: <img src="/img/publications/enders.png" alt="test">
