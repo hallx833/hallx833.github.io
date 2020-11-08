@@ -1,33 +1,126 @@
-- author:  F. Li, N. Upadhyaya, J. Sperschneider, O. Matny, H. Nguyen-Phuc, R. Mago, C. Raley, M. Miller, K. Silverstein, E. Henningsen, CD Hirsch, B. Visser, Z. Pretorius, B. Steffenson, B.
+- author: F. Li, N. Upadhyaya, J. Sperschneider, O. Matny, H. Nguyen-Phuc, R. Mago, C. Raley, M. Miller, K. Silverstein, E. Henningsen, CD Hirsch, B. Visser, Z. Pretorius, B. Steffenson, B.
   year: 2019
   title: Emergence of the Ug99 lineage of the wheat stem rust pathogen through somatic hybridisation
   ref: "bioRxiv 692640"
   doi: 10.1101/692640
   image: <img src="/img/publications/circos.png" alt="test">
 
-- author:  Z. Li, P. Zhou, R. Della Coletta, T. Zhang, A. Brohammer, B. Vaillancourt, A. Lipzen, C. Daum, K. Berry, N. de Leon, CD Hirsch, CR Buell, S. Kaeppler, N. Springer, CN Hirsch
+- author: Z. Li, P. Zhou, R. Della Coletta, T. Zhang, A. Brohammer, B. Vaillancourt, A. Lipzen, C. Daum, K. Berry, N. de Leon, CD Hirsch, CR Buell, S. Kaeppler, N. Springer, CN Hirsch
   year: 2019
   title: Highly genotype- and tissue-specific single-parent expression drives dynamic gene expression complementation in maize hybrids
   ref: "bioRxiv 668681"
   doi: 10.1101/668681
   image: <img src="/img/publications/zhi_spe.png" alt="test">
 
-- author:  S. Anderson, M. Stitzer, P. Zhou, J. Ross-Ibarra, CD Hirsch, N. Springer
+- author: S. Anderson, M. Stitzer, P. Zhou, J. Ross-Ibarra, CD Hirsch, N. Springer
   year: 2019
   title: Dynamic patterns of transcript abundance of transposable element families in maize
   ref: "bioRxiv 668558"
   doi: 10.1101/668558
   image: <img src="/img/publications/anderson_te_expression.png" alt="test">
 
-- author:  S. Anderson, M. Stitzer, A. Brohammer, P. Zhou, J. Noshay, CD Hirsch, J. Ross-Ibarra, CN Hirsch, N. Springer
+- author: S. Anderson, M. Stitzer, A. Brohammer, P. Zhou, J. Noshay, CD Hirsch, J. Ross-Ibarra, CN Hirsch, N. Springer
   year: 2019
   title: Transposable elements contribute to dynamic genome content in maize
   ref: "bioRxiv 547398"
   doi: 10.1101/547398
   image: <img src="/img/publications/anderson_te_distribution.png" alt="test">
 
-- author:  T. Enders, S. St. Dennis, J. Oakland, S. Callen, M. Gehan, N. Miller, E. Spalding, N. Springer, CD Hirsch
+- author: T. Enders, S. St. Dennis, J. Oakland, S. Callen, M. Gehan, N. Miller, E. Spalding, N. Springer, CD Hirsch
   year: 2019
   title: Classifying cold stress responses of inbred maize seedlings using RGB imaging
   doi: 10.1002/pld3.104
   image: <img src="/img/publications/enders.png" alt="test">
+
+- author: M. Miller, Y. Zhang, V. Omidvara, J. Sperschneider, B. Schwessinger, C. Raley, J. Palmer, D. Garnica, N. Upadhyayah, J. Rathjen, J. Taylor, R. Park, P. Dodds, CD Hirsch, S. Kianiana, M. Figueroa
+  year: 2018
+  title: De novo assembly and phasing of dikaryotic genomes from two isolates of Puccinia coronata f. sp. avenae, the causal agent of oat crown rust
+  doi: 10.1128/mBio.01650-17
+  image: <img src="/img/publications/pca_out.png" alt="test">
+
+- author: A. Waters, I. Makarevitch, J. Noshay, L. Burghardt, CN Hirsch, CD Hirsch, N. Springer
+  year: 2017
+  title: Natural variation for gene expression responses to abiotic stress in maize
+  doi: 10.1111/tpj.13414
+  image: <img src="/img/publications/mandy_paper_0.png" alt="test">
+
+- author: CD Hirsch, N. Springer
+  year: 2017
+  title: Transposable element influences on gene expression in plants
+  doi: 10.1016/j.bbagrm.2016.05.010
+  image: <img src="/img/publications/transposable.jpeg" alt="test">
+
+- author: CN Hirsch, CD Hirsch, A. Brohammer, M. Bowman, I. Soifer, O. Barad, D. Shem-Tov, K. Baruch, F. Lu, A. Hernandez, C. Fields, C. Wright, K. Koehler, N. Springer, E. Buckler, CR Buell, N. de Leon, S. Kaeppler, K. Childs, M. Mikel
+  year: 2016
+  title: Draft assembly of elite inbred line PH207 provides insights into genomic and transcriptomic diversity in maize
+  doi: 10.1105/tpc.16.00353
+  image: <img src="/img/publications/ph207.png" alt="test">
+
+- author: CD Hirsch, CR Buell, CN Hirsch
+  year: 2016
+  title: A toolbox of potato genetic and genomic resources
+  link: https://link.springer.com/article/10.1007/s12230-015-9486-0
+  link_text: American Journal of Potato Research
+  image: <img src="/img/publications/potato.png" alt="test">
+
+- author: Q. Li, J. Gent, G. Zynda, J. Song, I. Makarevitch, CD Hirsch, CN Hirsch, RK Dawe, T. Madzima, K. McGinnis, D. Lisch, R. Schmitz, M. Vaughn, N. Springer
+  year: 2015
+  title: RNA-directed DNA methylation enforces boundaries between heterochromatin and euchromatin in the maize genome
+  doi: 10.1073/pnas.1514680112
+  image: <img src="/img/publications/mchh.png" alt="test">
+
+- author: CD Hirsch, N. Springer, CN Hirsch
+  year: 2015
+  title: Genomic limitations to RNA sequencing expression profiling
+  doi: 10.1111/tpj.13014
+  image: <img src="/img/publications/simrna.png" alt="test">
+
+- author: CD Hirsch, J. Evans, CR Buell, CN Hirsch
+  year: 2014
+  title: Reduced representation approaches to interrogate genome diversity in large repetitive plant genomes
+  doi: 10.1093/bfgp/elt051
+  image: <img src="/img/publications/reduced2.png" alt="test">
+
+- author: CD Hirsch, J. Hamilton, K. Childs, J. Cepela, E. Crisovan, B. Vaillancourt, CN Hirsch, M. Habermann, B. Neal, CR Buell
+  year: 2014
+  title: "Spud DB: a resource for mining sequences, genotypes, and phenotypes to accelerate potato breeding"
+  doi: 10.3835/plantgenome2013.12.0042
+  image: <img src="/img/publications/spuddb.png" alt="test">
+
+- author: CN Hirsch, CD Hirsch, K. Felcher, J. Coombs, D. Zarka, A. Van Deynze, W. De Jong, R. Veilleux, S. Jansky, P. Bethke, D. Douches, CR Buell
+  year: 2013
+  title: Retrospective view of North American potato (Solanum tuberosum L.) breeding in the 20th and 21st centuries
+  doi: 10.1534/g3.113.005595
+  image: <img src="/img/publications/potato_diversity.png" alt="test">
+
+- author: CD Hirsch, J. Jiang
+  year: 2012
+  title: "Centromeres: sequences, structure, and biology"
+  link: link.springer.com/chapter/10.1007/978-3-7091-1130-7_4
+  link_text: Plant Genome Diversity Volume 1
+  image: <img src="/img/publications/rice_centromere.png" alt="test">
+
+- author: C. Fan, J. Walling, J. Zhang, CD Hirsch, J. Jiang, R. Wing
+  year: 2011
+  title: Conservation and purifying selection of transcribed genes located in a rice centromere
+  doi: 10.1105/tpc.111.085605
+  image: <img src="/img/publications/rice_cen8.png" alt="test">
+
+- author: G. Torres, Z. Gong, M. Iovene, CD Hirsch, CR Buell, G. Bryan, P. Novák, J. Macas, J. Jiang
+  year: 2011
+  title: Organization and evolution of subtelomeric satellite repeats in the potato genome
+  doi: 10.1534/g3.111.000125
+  image: <img src="/img/publications/potato_telomere.png" alt="test">
+
+- author: CD Hirsch, Y. Wu, H. Yan, J. Jiang
+  year: 2009
+  title: Lineage-specific adaptive evolution of the centromeric protein CENH3 in diploid and allotetraploid Oryza species
+  doi: 10.1093/molbev/msp208
+  image: <img src="/img/publications/polyploid_cenh3.png" alt="test">
+
+- author: K. Nagaki, J. Walling, CD Hirsch, J. Jiang, M. Murata
+  year: 2009
+  title: Structure and evolution of plant centromeres
+  link: link.springer.com/chapter/10.1007%2F978-3-642-00182-6_6
+  link_text: "Progress in Molecular and Subcellular Biology: Centromere"
+  image: <img src="/img/publications/centromere_cover.png" alt="test">
