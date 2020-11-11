@@ -15,6 +15,16 @@ image: /img/campus.jpg
       {{ person.role }}{% if person.joined %},
       {{ person.joined }}–present
       {% endif %}
+      <br>
+      {{ person.degree }} | {{ person.school }}
+      <br>
+      <a href="mailto: {{ person.email }}">{{ person.email }}</a> {% if person.phone %} | {{ person.phone }} {% endif %}
+      <br>
+      {% if person.scholar %} <a href="{{ person.scholar }}">Google Scholar</a> | {% endif %} 
+      {% if person.pubmed %} <a href="{{ person.pubmed }}">PubMed</a> | {% endif %}
+      {% if person.researchGate %} <a href="{{ person.researchGate }}">ResearchGate</a> | {% endif %}
+      {% if person.linkedIn %} <a href="{{ person.linkedIn }}">LinkedIn</a> | {% endif %}
+      {% if person.orcid %} <a href="{{ person.orcid }}">orcid</a>{% endif %}
     </div>
     {% if person.history %}
     <div class="element-subtext">
@@ -46,6 +56,14 @@ image: /img/campus.jpg
         GitHub
       </a>
       {% endif %}
+      {% if person.twitter %}
+      <a href="https://twitter.com/{{ person.twitter }}">
+        <span class="mdi mdi-twitter"></span>
+        @{{ person.twitter }}
+      </a>
+      {% endif %}
+      <br>
+      {% if person.description %} {{ person.description}} {% endif %}
     </div>
   </div>
   {% endfor %}
