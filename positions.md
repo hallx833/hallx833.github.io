@@ -5,23 +5,10 @@ permalink: /positions/
 ---
 
 
-<a id="postdocs"></a>
-The majority of our work in the lab is computational, but many of the ongoing projects provide ample opportunity to interact with experimental groups.  We are generally looking for candidates with a background or strong interest in computational biology, systems biology, biochemistry, data science, theoretical physics, or computer science. Applicants with knowledge of R and/or python and with experience in high-performance computing environments are preferred.
+## Graduate Student Opportunities
 
+The Hirsch lab is currently looking for a graduate student to join the lab as part of the [Plant Pathology](https://plpa.cfans.umn.edu/graduate-program/applying) graduate program. Among other projects, the student will research the influence transposable elements might have in creating new regulatory information that can influence gene expression in response to abiotic and biotic stress. This project is unique as it incorporates high-throughput genomic and transcriptomic datasets, along with machine-vision phenotyping. This position has the opportunity to collaborate with other research groups within the Plant Pathology Department, with other departments on campus, as well as outside the University of Minnesota. Prior experience in coding (R, Perl, Python, MATLAB) is desirable. If you are interested in this opportunity please contact Cory Hirsch with a CV and a statement of interest in the position.
 
-**Postdocs.**
-Job ads for specific postdoc positions are listed below.
+## Undergrduate Research Opportunities
 
-August 24, 2020: The Wilke lab has a new NIH-funded position for a postdoctoral researcher on a project that will design and test antimicrobial peptides. This work will be performed in collaboration with the [Davies lab.](http://bwdaviesutaustin.org/) The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, structural biology, machine learning, and protein design. This position will be entirely computational.
-
-Contact wilke@austin.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
-
-August 6, 2020: The Wilke and [Barrick](https://barricklab.org) labs have a new NIH-funded position for a postdoctoral researcher on a project that will design and test mechanistic models of bacteriophage infection, replication, and evolution for applications in phage therapy and the design of attenuated vaccines. The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, phage biology, genome engineering, evolution, and synthetic biology. This position will be primarily experimental.
-
-Contact wilke@austin.utexas.edu and jbarrick@cm.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
-
-**Graduate students.**
-Prospective graduate students should inquire with Claus Wilke, but will have to apply through the regular process at UT Austin, either with the [Ecology, Evolution, & Behavior Graduate Program](http://www.biosci.utexas.edu/graduate/eeb/) or with the [Cell and Molecular Biology Graduate Program](https://icmb.utexas.edu/cmb/).
-
-**Undergraduates.**
-Undergraduates usually work for course credit or volunteer. Please contact Claus Wilke and inquire about current opportunities.
+The Hirsch lab is always looking for talented undergraduates interested in stress biology and/or coding to join the lab. We use enabling technologies to understand genomic and expression variation within species and associating this variation with precision phenotyping to understand abiotic and biotic stress response in plants. Undergraduates in the lab are encouraged to learn programming, computational biology, genomics, precision phenotyping, and how to manage large data. Please contact Cory Hirsch with a resume and a statement of interest including what you hope to achieve in the experience.

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: People
+title: Lab Members
 permalink: /people
-image: /img/campus.jpg
+
 ---
-<div class="people-image" style="background-image: url({{ page.image | prepend: site.baseurl }});">
+<!-- <div class="people-image" style="background-image: url({{ page.image | prepend: site.baseurl }});"> -->
 </div>
-<div class="section">
+<div class="section" style="padding-left: 27.5%;">
   <h2>Current group members</h2>
   {% for person in site.data.current_members %}
   <div class="element-wrap">
@@ -18,13 +18,12 @@ image: /img/campus.jpg
       <br>
       {{ person.degree }} | {{ person.school }}
       <br>
-      <a href="mailto: {{ person.email }}">{{ person.email }}</a> {% if person.phone %} | {{ person.phone }} {% endif %}
-      <br>
-      {% if person.scholar %} <a href="{{ person.scholar }}">Google Scholar</a> | {% endif %} 
-      {% if person.pubmed %} <a href="{{ person.pubmed }}">PubMed</a> | {% endif %}
-      {% if person.researchGate %} <a href="{{ person.researchGate }}">ResearchGate</a> | {% endif %}
-      {% if person.linkedIn %} <a href="{{ person.linkedIn }}">LinkedIn</a> | {% endif %}
-      {% if person.orcid %} <a href="{{ person.orcid }}">orcid</a>{% endif %}
+      <a href="mailto: {{ person.email }}">{{ person.email }}</a> {% if person.phone %} {{ person.phone }} {% endif %}
+      {% if person.scholar %} | <a href="{{ person.scholar }}">Google Scholar</a> {% endif %} 
+      {% if person.pubmed %} | <a href="{{ person.pubmed }}">PubMed</a> {% endif %}
+      {% if person.researchGate %} | <a href="{{ person.researchGate }}">ResearchGate</a> {% endif %}
+      {% if person.linkedIn %} | <a href="{{ person.linkedIn }}">LinkedIn</a> {% endif %}
+      {% if person.orcid %} | <a href="{{ person.orcid }}">orcid</a>{% endif %}
     </div>
     {% if person.history %}
     <div class="element-subtext">
@@ -61,36 +60,71 @@ image: /img/campus.jpg
         <span class="mdi mdi-twitter"></span>
         @{{ person.twitter }}
       </a>
-      {% endif %}
       <br>
+      {% endif %}
       {% if person.description %} {{ person.description}} {% endif %}
     </div>
   </div>
   {% endfor %}
 </div>
-<div class="section">
+<div class="section" style="padding-left: 27.5%;">
   <h2>Past group members</h2>
   {% for person in site.data.past_members %}
   <div class="element-wrap">
     <div class="element-name">{{ person.name }}</div>
     <div class="element-subtext">
-      {{ person.role }},
-      {% if person.joined == person.left %}
-      {{ person.left }}
-      {% else %}
-      {{ person.joined }}–{{ person.left }}
+      {{ person.role }}{% if person.joined %},
+      {{ person.joined }}–present
       {% endif %}
+      <br>
+      {{ person.degree }} | {{ person.school }}
+      <br>
+      <a href="mailto: {{ person.email }}">{{ person.email }}</a> {% if person.phone %} {{ person.phone }} {% endif %}
+      {% if person.scholar %} | <a href="{{ person.scholar }}">Google Scholar</a> {% endif %} 
+      {% if person.pubmed %} | <a href="{{ person.pubmed }}">PubMed</a> {% endif %}
+      {% if person.researchGate %} | <a href="{{ person.researchGate }}">ResearchGate</a> {% endif %}
+      {% if person.linkedIn %} | <a href="{{ person.linkedIn }}">LinkedIn</a> {% endif %}
+      {% if person.orcid %} | <a href="{{ person.orcid }}">orcid</a>{% endif %}
     </div>
-    {% if person.currently %}
+    {% if person.history %}
     <div class="element-subtext">
-      Last known whereabouts:
-      {% if person.url %}
-      <a href="{{ person.url }}">{{ person.currently }}</a>
-      {% else %}
-      {{  person.currently }}
-      {% endif %}
+      {{ person.history }}
     </div>
     {% endif %}
+    <div class="element-links">
+      {% if person.url %}
+      <a href="{{ person.url }}">
+        <span class="mdi mdi-account-box"></span>
+        Profile
+      </a><br />
+      {% endif %}
+      {% if person.pubs %}
+      <a href="{{ person.pubs }}">
+        <span class="mdi mdi-text-box-multiple"></span>
+        Publications
+      </a><br />
+      {% endif %}
+      {% if person.blog %}
+      <a href="{{ person.blog }}">
+        <span class="mdi mdi-rss-box"></span>
+        Blog
+      </a><br />
+      {% endif %}
+      {% if person.github %}
+      <a href="https://github.com/{{ person.github }}">
+        <span class="mdi mdi-github"></span>
+        GitHub
+      </a>
+      {% endif %}
+      {% if person.twitter %}
+      <a href="https://twitter.com/{{ person.twitter }}">
+        <span class="mdi mdi-twitter"></span>
+        @{{ person.twitter }}
+      </a>
+      <br>
+      {% endif %}
+      {% if person.description %} {{ person.description}} {% endif %}
+    </div>
   </div>
   {% endfor %}
 </div>
